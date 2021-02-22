@@ -58,14 +58,15 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 bindsym $mod+Shift+f exec --no-startup-id firefox
-bindsyn $mod+Shift+c exec --no-startup-id code 
+bindsym $mod+Shift+c exec --no-startup-id code
+bindsym $mod+Shift+d exec --no-startup-id discord 
 bindsym $mod+F3 exec pcmanfm
 # bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
 bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill picom
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b
-bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
+bindsym $mod+Ctrl+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
@@ -190,6 +191,7 @@ bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
 # assign [class="Thunderbird"] $ws1
 assign [class="firefox"] $ws2
 assign [class="Code"] $ws3
+assign [class="discord"] $ws4
 # assign [class="Skype"] $ws5
 
 # Open specific applications in floating mode
