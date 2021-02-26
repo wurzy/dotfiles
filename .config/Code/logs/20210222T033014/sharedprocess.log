@@ -1,0 +1,2 @@
+[2021-02-22 03:30:18.553] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/wurzy/.config/Code/User/snippets'
+[2021-02-22 03:30:58.443] [sharedprocess] [info] Starting to clean up unused language packs.
