@@ -297,7 +297,7 @@ exec_always --no-startup-id fix_xcursor
 
 # My executables
 exec_always --no-startup-id /home/wurzy/.i3/execs/alternating_layouts.py
-exec_always --no-startup-id feh --bg-scale /home/wurzy/.i3/wallpapers/purple.jpg
+exec_always --no-startup-id feh --bg-scale /home/wurzy/.i3/wallpapers/purple2.jpg
 # My workspaces
 #exec --no-startup-id i3-msg 'workspace $ws2; exec firefox; workspace $ws1; exec terminal'
 
