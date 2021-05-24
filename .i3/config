@@ -70,9 +70,14 @@ bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill picom
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b
 bindsym $mod+Ctrl+d --release exec "killall dunst; exec notify-send 'restart dunst'"
-bindsym Print exec --no-startup-id i3-scrot
-bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
-bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
+bindsym Print exec --no-startup-id flameshot gui
+#bindsym Print exec --no-startup-id i3-scrot
+#bindsym Print --release exec --no-startup-id maim | xclip -sel clip -t image/png
+#bindsym Shift+Print --release exec --no-startup-id maim ~/Pictures/screenshots/$(date '+%y%m%d-%H%M-%S').png
+#bindsym Ctrl+Print --release exec --no-startup-id maim -s | xclip -sel clip -t image/png
+#bindsym Ctrl+Shift+Print --release exec --no-startup-id maim -s ~/Pictures/screenshots/$(date '+%y%m%d-%H%M-%S').png
+#bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
+#bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
 bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
@@ -300,7 +305,7 @@ exec_always --no-startup-id fix_xcursor
 
 # My executables
 exec_always --no-startup-id /home/wurzy/.i3/execs/alternating_layouts.py
-exec_always --no-startup-id feh --bg-scale /home/wurzy/.i3/wallpapers/purple2.jpg
+exec_always --no-startup-id feh --bg-scale /home/wurzy/.i3/wallpapers/purple3.jpeg
 # My workspaces
 #exec --no-startup-id i3-msg 'workspace $ws2; exec firefox; workspace $ws1; exec terminal'
 
